@@ -1,0 +1,73 @@
+<header>
+  <!-- Header desktop -->
+  <div class="container-menu-desktop" appFixedMenu>
+    <div class="topbar">
+      <div class="content-topbar container h-100">
+        <div class="left-topbar">
+          <app-left-topbar-location class="left-topbar-item flex-wr-s-c"></app-left-topbar-location>
+          <app-left-topbar-item></app-left-topbar-item>
+        </div>
+
+        <div class="right-topbar">
+          <app-social-networks></app-social-networks>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+      <!-- Logo moblie -->
+      <div class="logo-mobile">
+        <a routerLink='/'><img src="/assets/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+      </div>
+
+      <!-- Button show menu -->
+      <div class="btn-show-menu-mobile hamburger hamburger--squeeze m-r--8" appHamburger>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+      <ul class="topbar-mobile">
+        <li class="left-topbar">
+          <span class="left-topbar-item flex-wr-s-c">
+            <app-left-topbar-location></app-left-topbar-location>
+          </span>
+        </li>
+
+        <li class="left-topbar">
+          <app-left-topbar-item></app-left-topbar-item>
+        </li>
+
+        <li class="right-topbar">
+          <app-social-networks></app-social-networks>
+        </li>
+      </ul>
+      <app-menu mob='true'></app-menu>
+    </div>
+
+    <!--  -->
+    <div class="wrap-logo container">
+      <!-- Logo desktop -->
+      <div class="logo">
+        <a routerLink="/"><img src="/assets/images/icons/logo-01.png" alt="LOGO"></a>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner-header">
+        <a href="#"><img src="/assets/images/banner-01.jpg" alt="IMG"></a>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="wrap-main-nav">
+      <div class="main-nav">
+        <!-- Menu desktop -->
+        <app-menu></app-menu>
+      </div>
+    </div>
+  </div>
+</header>
